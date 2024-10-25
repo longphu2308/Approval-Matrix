@@ -9,5 +9,4 @@ struct Approval_MatrixApp: App {
         }
         .modelContainer(for: Matrix.self)
     }
-    init(){print(URL.applicationSupportDirectory.path(percentEncoded: false))}
 }
