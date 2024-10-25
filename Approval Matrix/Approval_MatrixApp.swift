@@ -1,11 +1,5 @@
-//
-//  Approval_MatrixApp.swift
-//  Approval Matrix
-//
-//  Created by Trần Long Phú on 23/10/24.
-//
-
 import SwiftUI
+import SwiftData
 
 @main
 struct Approval_MatrixApp: App {
@@ -13,5 +7,7 @@ struct Approval_MatrixApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Matrix.self)
     }
+    init(){print(URL.applicationSupportDirectory.path(percentEncoded: false))}
 }
